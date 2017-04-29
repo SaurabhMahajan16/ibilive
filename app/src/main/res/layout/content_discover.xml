@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_posts"
+        style="@style/contentdiscoverheader"
+        android:src="@drawable/paris"
+        android:scaleType="fitXY"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_discoverText"
+        android:orientation="horizontal"
+
+        >
+    <TextView
+        style="@style/contentdiscoverheader"
+        android:layout_width="0dp"
+        android:text="@string/explore"
+        android:textColor="@color/white"
+        android:layout_weight="1.5"
+        android:padding="@dimen/marginsmall"
+        android:gravity="center_vertical"
+        />
+    <TextView
+       style="@style/contentdiscoverheader"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/marginsmall"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_place_black_24dp"
+        android:text="@string/place"
+        android:textColor="@color/white"
+        />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_userbody"
+            android:layout_below="@id/iv_posts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <ImageView
+            android:id="@+id/tv_user"
+            style="@style/discovercontent"
+            android:src="@drawable/add_image_icon"
+            android:layout_marginTop="@dimen/marginnormal"
+            />
+            <LinearLayout
+                android:layout_below="@id/iv_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/marginnormal"
+                >
+                <TextView
+                    style="@style/discovercontent"
+                    android:gravity="bottom"
+                    android:text="@string/user"
+
+                    />
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/discovercontent"
+                android:progressDrawable="@drawable/custom_ratingbar_selector"
+                android:numStars="5"
+                android:padding="0dp"
+                android:stepSize="0.2"
+                android:rating="3.0"
+                android:layout_height="34dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/marginlarge"
+                >
+        <TextView
+            android:layout_marginTop="@dimen/marginsmall"
+            style="@style/discovercontent"
+            android:drawableStart="@drawable/time_1"
+            android:text="@string/timer"
+            android:gravity="center_vertical"
+            />
+            <TextView
+                android:layout_marginTop="@dimen/marginsmall"
+                style="@style/discovercontent"
+                android:drawableStart="@drawable/reviews"
+                android:text="@string/review"
+                android:gravity="center_vertical"
+                 />
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_userbody"
+        >
+        <TextView
+            android:text="@string/loremipsum"
+            style="@style/discovercontent"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

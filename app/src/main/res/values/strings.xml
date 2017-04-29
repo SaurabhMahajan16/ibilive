@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">iblive</string>
+    <string name="search_hint">Where would you connect</string>
+    <string name="user">John</string>
+    <string name="place">Paris</string>
+    <string name="home">Home</string>
+    <string name="cards">Cards/Subscriptions</string>
+    <string name="support">Support</string>
+    <string name="request">My Request</string>
+    <string name="share">Share</string>
+    <string name="logout">Logout</string>
+    <string name="explore">Explore Paris</string>
+    <string name="loremipsum">Lorem ipsum dolor sit amet, consectetur lorem ipsum
+dolor sit amet, consectetur lorem ipsum.</string>
+    <string name="timer">6d 2h left</string>
+    <string name="review">222 Reviews</string>
+</resources>

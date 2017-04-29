@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_discover"
+            style="@style/activebottom"
+            android:drawableTop="@drawable/discover_active"/>
+        <TextView
+            android:id="@+id/tv_map"
+            style="@style/activebottom"
+            android:drawableTop="@drawable/map_active"/>
+        <TextView
+            android:id="@+id/tv_posts"
+            style="@style/activebottom"
+            android:drawableTop="@drawable/posts_active"/>
+        <TextView
+            android:id="@+id/tv_requests"
+            style="@style/activebottom"
+            android:drawableTop="@drawable/requests_active"/>
+        <TextView
+            android:id="@+id/tv_network"
+            style="@style/activebottom"
+            android:drawableTop="@drawable/networks_active"/>
+
+
+    </LinearLayout>
